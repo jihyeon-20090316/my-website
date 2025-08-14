@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMT Game Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">🎮 BMT Games</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to BMT Games</h1>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About BMT Games</h2>
+    <p>Discover the ultimate luxury gaming experience. Our games are crafted with precision, style, and elegance. Join the elite gaming community now.</p>
+  </section>
+
+  <!-- Dashboard Section -->
+  <section id="dashboard" class="dashboard">
+    <h2>Dashboard</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>BMT Games</h3>
+        <h4>Latest Hits</h4>
+        <p>Experience the most thrilling and visually stunning games available today.</p>
+      </div>
+      <div class="card">
+        <h3>Top Scores</h3>
+        <h4>Leaderboard</h4>
+        <p>Compete with players worldwide and climb the exclusive BMT Games leaderboard.</p>
+      </div>
+      <div class="card">
+        <h3>Game Insights</h3>
+        <h4>Analytics</h4>
+        <p>Track your progress and improve your strategy with detailed analytics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button id="introduce">Introduce Yourself</button>
+  </section>
+
+  <div class="card">
+  <img src="carbon-copy/images/images.png" alt="Description" style="width:100%; border-radius:8px;">
+  <!-- Audio -->
+  <audio id="music" src="carbon-copy/images/dj-cat-oii-a-ii.mp3"></audio>
+  <p>I love BMT! </p>
+  <script>
+  const card = document.getElementById('card');
+    const music = document.getElementById('music');
+
+    card.addEventListener('click', () => {
+  
+      if (!music.paused) {
+        music.pause();
+        music.currentTime = 0;
+      }
+      music.play();
+    });
+    </script>
+</div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 bmthighschool. All Rights Reserved.</p>
+    <ul>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
